@@ -1,0 +1,143 @@
+{
+  "language": "en",
+  "YigalPinchas": "Yigal Pinchas Ph.D",
+  "ReadMore": "Read More",
+  "Home": "Home",
+  "Books": "Books",
+  "Articles": "Articles",
+  "Courses": "Courses",
+  "MultimediaShort": "The Multimedia",
+  "Multimedia": "The DVD Multimedia",
+  "HeroSubtitle": "Physical activity and health promotion",
+  "HeroDescription": "Senior lecturer at Seminar Hakibbutzim College, physical education teacher in high schools in Tel Aviv. Visiting professor at the University of Calgary in Canada.",
+  "AboutTitle": "A Bit About Yigal",
+  "AboutSubtitle": "“There is no love like the love of muscle” Yigal Pinchas, Ph.D.",
+  "AboutMain": "<p>Many of my friends and students asked me to write about my challenging, surprising,  and inspiring life story... </p><p>Until the age of 18 (recruitment age), I grew up for 14 years in various boarding school  settings. I learned silence from the chatterboxes, kindness from the cruel-hearted, and  patience from the impatient. To my greatest surprise, I am not grateful to these teachers  of mine. <p/><p>Nevertheless, I've come to realize that necessity is the mother of invention, that to know  how to get up you must not fear falling, and that patience is bitter but its fruit is sweet! </p><p>I chose to write and focus on the \"toolbox containing tools for life\" - these tools are the  strengths and powers in the holistic approach I developed throughout my life. This  approach first proved its effectiveness to me in promoting a healthy and active lifestyle,  and later contributed greatly to those around me. Many of his friends and students  asked me to write </p><p>This holistic approach not only benefited me and those close to me, but also profoundly  impacted the readers of my books. Many of them shared with me how the tools I  presented helped them deal with life's challenges more effectively. My readers reported  significant improvement in their ability to identify their personal strengths and use them  as leverage for growth. They learned to see obstacles as opportunities for developing  creative solutions, just as I learned that \"necessity is the mother of invention.\"</p>",
+  "YigalMail": "yigalpinchas@gmail.com",
+  "Back": "Back",
+  "Copyright": "Yigal Pinchas Ph.D Copyright © 2025 · All Rights Reserved",
+  "MultimediaInfo": [
+    "The following courses: Anatomy, Physiology, Kinesiology, Theoretical Physical Fitness, Training Sciences, Gyms, Practical Physical Fitness, and Biomechanics are mostly mandatory courses in the training process of teacher candidates in the School for Advanced Studies, the School for Advanced Learning, the School of Physical Education and Movement, the Faculty of Medicine specializing in Physiotherapy studies, and in the Faculty of Kinesiology, and more...",
+    "<strong>The literature on these subjects is extensive and very expensive.</strong>",
+    "These are complex subjects that require deep understanding, extensive memorization,  visual perception, and in many cases, abstract thinking and three-dimensional conceptualization abilities.",
+    "In addition, we are witnessing a \"sitting culture\" and its negative aspects (obesity, increase in heart and vascular diseases, laziness, etc.). Lack of knowledge and motivation for physical activity also cause negative side effects: failure to achieve training goals, sports injuries, waste of time, and eventually even dropping out of physical activity.",
+    "For this purpose, a tool has been developed to assist in learning, spark curiosity, and increase enjoyment and insights from the combination of different fields of knowledge.",
+    "Therefore, we decided to develop an extensive multimedia guide worth <strong>$300,000</strong> which will be a <strong>winning combination</strong> between academic research knowledge in the fields of human body sciences and thoughtful, intelligent practice that will lead to a healthy lifelong journey."
+  ],
+  "MultimediaContact": "For purchase, contact ",
+  "404": "404 - Not Found!",
+  "CoursesInfo": [
+    {
+      "location": "Training Theory at Washington Hills College",
+      "courses": [
+        "Basketball coaches",
+        "Gymnastics instructors",
+        "Swimming instructors"
+      ]
+    },
+    {
+      "location": "Training Theory at Siam Campus at Tel Aviv University",
+      "courses": [
+        "Aerobics instructors",
+        "Soccer instructors",
+        "Basketball instructors",
+        "Triathlon instructors",
+        "Acrobatics and gymnastics instructors",
+        "Triathlon coaches",
+        "Basketball coaches"
+      ]
+    },
+    {
+      "location": "Coordinator and Lead at Kibbutzim College",
+      "courses": [
+        "Fitness and health instructors and training of minors for gym workouts (approved by the Sports Administration)",
+        "Management and organization of sports events",
+        "Theoretical physical fitness",
+        "Practical physical fitness",
+        "Pedagogical instructor for 3rd year teacher training",
+        "Physical education internship guidance for 4th year'",
+        "Therapeutic riding instructors.",
+        "Teacher initiating healthy lifestyle",
+        "Training of teaching assistants in physical education for individuals with special needs"
+      ]
+    },
+    {
+      "location": "Ono Academic College",
+      "courses": [
+        "Fitness and health instructors and training of minors for gym workouts (practical and theoretical branch theory; approved by the Sports Administration)"
+      ]
+    }
+  ],
+  "MoreBooks": "More Books",
+  "PurchaseBooks": "To purchase the book",
+  "LibraryInstructions": "Click on a book to read about it",
+  "ClickHere": "Click here",
+  "NoArticleFound": "No article found",
+  "ArticleSearch": "Search for an article...",
+  "ArticlesData": [
+    {
+      "name": "Difficulties and Challenges in Physical Education",
+      "url": "Difficulties and Challenges in Physical Education"
+    },
+    {
+      "name": "Developing a Multimedia Guide to Working Out in the Gym",
+      "url": "Developing a Multimedia Guide to Working Out in the Gym"
+    },
+    {
+      "name": "Warm-up in Physical Training- Everything You Need to Know",
+      "url": "Warm-up in Physical Training- Everything You Need to Know"
+    },
+    {
+      "name": "Flexibility - From Theory to Practice",
+      "url": "Flexibility - From Theory to Practice"
+    },
+    {
+      "name": "The Differences Between Women and Men",
+      "url": "The Differences Between Women and Men"
+    },
+    {
+      "name": "The Effect of Moderate or Vigorous Physical Activity on Subsequent Concentra",
+      "url": "The Effect of Moderate or Vigorous Physical Activity on Subsequent Concentra"
+    },
+    {
+      "name": "The Impact of Multimedia Integration in Teaching Programs Among Students",
+      "url": "The Impact of Multimedia Integration in Teaching Programs Among Students"
+    },
+    {
+      "name": "Using a Multimedia Learning Resource to Enhance Understanding of Daily Exercise Practical Considerations",
+      "url": "Using a Multimedia Learning Resource to Enhance Understanding of Daily Exercise Practical Considerations"
+    },
+    {
+      "name": "The gym as a heterotopia",
+      "url": "The gym as a heterotopia"
+    },
+    {
+      "name": "Getting Back in Shape After the Holiday Season",
+      "url": "Getting Back in Shape After the Holiday Season"
+    },
+    {
+      "name": "Long-term  effectiveness of structured fitness programme on students physical achivements, motivation and awareness of fitness essence",
+      "url": "Long-term  effectiveness of structured fitness programme on students physical achivements, motivation and awareness of fitness essence"
+    },
+    {
+      "name": "Advantages and Limitations of the Gym",
+      "url": "Advantages and Limitations of the Gym"
+    },
+    {
+      "name": "Cultivating a Culture of Physical Activity Among Physical Education Student Teachers at Kibbutzim College",
+      "url": "Cultivating a Culture of Physical Activity Among Physical Education Student Teachers at Kibbutzim College"
+    },
+    {
+      "name": "Futsal Player Guidelines",
+      "url": "Futsal Player Guidelines"
+    },
+    {
+      "name": "Preliminary Steps in Self Management Program with a Holistic",
+      "url": "Preliminary Steps in Self Management Program with a Holistic"
+    },
+    {
+      "name": "Sleep - Who Needs It Anyway",
+      "url": "Sleep - Who Needs It Anyway"
+    }
+  ]
+}

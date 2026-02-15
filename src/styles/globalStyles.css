@@ -1,0 +1,88 @@
+:root {
+    --cream: #FEF4EA;
+    --light-cream: #FEFAF7;
+    /* --highlight: #CC663F; */
+    --highlight: #da6739;
+    --dark-brown:  #513126;
+
+    direction: rtl;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    
+    width: 100%;
+    overflow-x: hidden;
+}
+html {
+    width: 100vw;
+}
+
+body {
+    background-color: var(--cream);
+}
+
+h1 {
+    font-size: 4.7rem;
+    color: var(--dark-brown);
+    margin-top:  1rem;
+    margin-bottom: 2rem;
+    font-weight: 600;    
+}
+
+h2 {
+    margin-top:  1rem;
+    margin-bottom: 1rem;
+    font-size: 3.75rem;
+    color: var(--dark-brown);
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+button{
+    border: none;
+    transition: filter 0.2s ease-in-out;
+}
+
+button:hover{
+    filter: brightness(0.80);
+    cursor: pointer;
+}
+
+.action-button {
+    background-color: var(--highlight);
+    color: var(--light-cream);
+    border-radius: 10px;
+    transition: filter 0.2s ease-in-out;
+}
+
+.trademark {
+    color: var(--highlight);
+}
+
+.pretty-shadow{
+    box-shadow:
+    0 1px 1px hsl(0deg 0% 0% / 0.075),
+    0 2px 2px hsl(0deg 0% 0% / 0.075),
+    0 4px 4px hsl(0deg 0% 0% / 0.075),
+    0 8px 8px hsl(0deg 0% 0% / 0.075),
+    0 16px 16px hsl(0deg 0% 0% / 0.075)
+    ;
+}
+
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 65px;
+    }
+}
+
+strong {
+    color: var(--highlight);
+}
+
+.rpv-core__inner-page {
+    background-color: var(--cream) !important;
+}
+
+.open {
+    opacity: 1 !important;
+}
