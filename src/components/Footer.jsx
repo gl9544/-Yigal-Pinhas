@@ -20,7 +20,7 @@ const FooterSection = styled.section`
   
   hr {
     width: 100%;
-    border-color: #fef4ea8e !important;;
+    border-color: #FFD60080 !important;;
   }
   @media only screen and (max-width: 768px) {
     gap: 1rem;
@@ -84,9 +84,39 @@ const Link = styled.p`
 const Socials = styled.div`
   display: flex;
   gap: 1rem;
-  
+
   @media only screen and (max-width: 768px) {
     gap: 1.5rem;
+  }
+`
+
+const SocialIconsRow = styled.div`
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+  padding: 1rem 0;
+  width: 100%;
+`
+
+const SocialIcon = styled.a`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--cream) !important;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+    transform: translateY(-3px) scale(1.1);
+  }
+
+  @media only screen and (max-width: 768px) {
+    width: 45px;
+    height: 45px;
   }
 `
 
@@ -108,16 +138,14 @@ const Footer = () => {
         </Socials>
       </Row>
       <hr />
+      <SocialIconsRow>
+          <SocialIcon href="https://www.facebook.com/profile.php?id=61573052222669" target="_blank" rel="noopener noreferrer"><IconBrandFacebook size={26} /></SocialIcon>
+          <SocialIcon href="https://www.instagram.com/dr.yigalpinchas.israel?igsh=MW1sbTNrYXB0b2x4Nw==" target="_blank" rel="noopener noreferrer"><IconBrandInstagram size={26} /></SocialIcon>
+          <SocialIcon href={`https://mail.google.com/mail/?view=cm&fs=1&to=${t("YigalMail")}`} target="_blank" rel="noopener noreferrer"><IconMail size={26} /></SocialIcon>
+          <SocialIcon href="https://www.linkedin.com/in/yigal-pinchas-ph-d-9066b2352/" target="_blank" rel="noopener noreferrer"><IconBrandLinkedin size={26} /></SocialIcon>
+      </SocialIconsRow>
       <Row>
         <label>{t("Copyright")}</label>
-
-        <Socials>
-          <a href="https://www.facebook.com/profile.php?id=61573052222669" target="#blank"><IconBrandFacebook /></a>
-          <a href="https://www.instagram.com/dr._yigal_pinchas_office/" target="#blank"><IconBrandInstagram /></a>
-          <a href={`https://mail.google.com/mail/?view=cm&fs=1&to=${t("YigalMail")}`} target="#blank"><IconMail /></a>
-          {/* <a href="https://mail.google.com/mail/?view=cm&fs=1&to=example@email.com&su=Subject">Email using Gmail</a> */}
-          <a href="https://www.linkedin.com/in/yigal-pinchas-ph-d-9066b2352/" target="#blank"><IconBrandLinkedin/></a>
-        </Socials>
       </Row>
     </FooterSection>
   );

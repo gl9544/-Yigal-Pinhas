@@ -1,9 +1,9 @@
 :root {
-    --cream: #FEF4EA;
-    --light-cream: #FEFAF7;
+    --cream: #FFF8E1;
+    --light-cream: #FFFDE7;
     /* --highlight: #CC663F; */
-    --highlight: #da6739;
-    --dark-brown:  #513126;
+    --highlight: #FFD600;
+    --dark-brown:  #1a1a1a;
 
     direction: rtl;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    
@@ -50,7 +50,7 @@ button:hover{
 
 .action-button {
     background-color: var(--highlight);
-    color: var(--light-cream);
+    color: var(--dark-brown);
     border-radius: 10px;
     transition: filter 0.2s ease-in-out;
 }

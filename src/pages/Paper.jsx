@@ -20,7 +20,7 @@ const BackBtn = styled.button`
   margin: 2rem 5%;
   border-radius: 10px;
   background-color: var(--highlight);
-  color: var(--light-cream);
+  color: var(--dark-brown);
   font-size: 1rem;
   padding: 1rem;
   display: flex;
@@ -76,7 +76,7 @@ const DownloadBtn = styled.button`
   background-color: var(--highlight);
   padding: 0.8rem 1.8rem;
   border-radius: 10px;
-  color: var(--light-cream);
+  color: var(--dark-brown);
   margin-bottom: 1rem;
   font-size: 1rem;
   box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.03), 0 2px 2px hsl(0deg 0% 0% / 0.03),

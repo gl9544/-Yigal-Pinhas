@@ -11,7 +11,7 @@ import { IconArrowLeft } from "@tabler/icons-react";
 const BooksSection = styled.section`
   padding: 3vh 5%;
   overflow: hidden;
-  background-color: #65b3e155;
+  background-color: #FFD60033;
 
   @media only screen and (min-width: 1440px) {
     padding: 4vh 10%;
@@ -78,7 +78,7 @@ const BookDescContainer = styled.div`
   }
 
   p {
-    color: #5b5b5b;
+    color: #333333;
     width: 100%;
     line-height: 1.3rem;
 
@@ -103,7 +103,7 @@ const ActionButton = styled.button`
   border-radius: 10px;
   font-size: 1.2rem;
   width: max-content;
-  background-color: #234e76;
+  background-color: #1a1a1a;
   color: var(--cream);
   padding: 1rem 1.25rem;
   margin-top: 0.5rem;

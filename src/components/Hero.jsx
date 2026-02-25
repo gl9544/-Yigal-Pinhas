@@ -75,7 +75,7 @@ const HeroSubtitle = styled.h3`
 `;
 
 const HeroDesc = styled.p`
-  color: #656565;
+  color: #333333;
   margin-bottom: 2rem;
   width: 75%;
 

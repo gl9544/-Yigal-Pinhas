@@ -45,14 +45,14 @@ const ListItem = styled.button`
   min-height: 6rem;
   font-size: 1.1rem;
   color: black;
-  background: linear-gradient(45deg, #f9f4ee 0%, #fffcf9 100%);
+  background: linear-gradient(45deg, #FFF8E1 0%, #FFFDE7 100%);
   z-index: 2;
   box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.03), 0 2px 2px hsl(0deg 0% 0% / 0.03),
     0 4px 4px hsl(0deg 0% 0% / 0.03), 0 8px 8px hsl(0deg 0% 0% / 0.03),
     0 16px 16px hsl(0deg 0% 0% / 0.03);
   padding: 1.5rem;
 
-  border: 1px solid #51312616;
+  border: 1px solid #1a1a1a16;
   @media only screen and (max-width: 768px) {
     flex: 0 0 calc(33% - 1rem);
   }
@@ -158,7 +158,7 @@ const Papers = () => {
               onClick={() => handleClick(index)}
               style={{
                 color:
-                  specialArticles.find((a) => a === item.name) && "#da6739",
+                  specialArticles.find((a) => a === item.name) && "#FFD600",
               }}
             >
               {item.name}

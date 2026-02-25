@@ -122,7 +122,7 @@ export const bookNodes = [
       "<p>Dreaming of a stronger, more flexible body? This book is the perfect guide for you! You'll  find a variety of detailed exercises and clear illustrations that will help you safely and  effectively develop your flexibility. With no need for special equipment or prior  knowledge, you can start training today and enjoy the many benefits of flexibility:  improved performance, injury prevention, stress relief, and better posture. </p>",
       "<h4>Why is this book for you? <h4>",
       "<ul><li><b>Simple and clear:</b> Detailed explanations and high-quality images to help you  understand and correctly perform the exercises. </li><li><b>Diverse: </b>A wide range of exercises to suit any level and any goal. </li><li><b>Effective:</b> Focused exercises that will help you achieve results quickly.</li> <li><b>Safe:</b> Detailed safety guidelines to ensure proper and safe training. </li></ul>",
-      '<h4 style="color: #da6739; font-size: 1.2rem"; > Start your journey to stronger, more flexible body today!</h4>',
+      '<h4 style="color: #FFD600; font-size: 1.2rem"; > Start your journey to stronger, more flexible body today!</h4>',
     ],
   },
   {

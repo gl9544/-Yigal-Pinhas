@@ -30,11 +30,11 @@ const NavbarSection = styled.nav`
 `;
 
 const NavbarContainer = styled.div`
-  background: linear-gradient(180deg, var(--cream), #fef4ea);
+  background: linear-gradient(180deg, var(--cream), #FFF8E1);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 2px solid #51312684;
+  border-bottom: 2px solid #1a1a1a84;
   position: relative;
   height: 100%;
   padding: 0 5%;
@@ -89,7 +89,7 @@ const Link = styled.div`
 
   &:hover {
     box-shadow: inset 0 400px 0 0 var(--highlight);
-    color: white;
+    color: black;
     transition: color 0.2s ease-in-out, box-shadow 0.5s ease-in-out;
   }
 
@@ -173,10 +173,10 @@ const ModalLink = styled.div`
   box-shadow: inset 0 0 0 0 var(--highlight);
   transition: color 0.3s ease-in-out, box-shadow 0.4s ease-in-out;
 
-  border-bottom: 1px solid #51312689;
+  border-bottom: 1px solid #1a1a1a89;
   &:hover {
     box-shadow: inset 500px 0 0 0 var(--highlight);
-    color: white;
+    color: black;
   }
 `;
 
