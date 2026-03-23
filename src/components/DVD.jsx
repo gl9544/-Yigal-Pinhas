@@ -1,10 +1,11 @@
 import React from "react";
 import styled from "styled-components";
-import img1 from "../assets/client-images/DVD/gallery-1.png";
+import img1 from "../assets/client-images/DVD/gallery-1.jpg";
 import img2 from "../assets/client-images/DVD/gallery-2.png";
-import img3 from "../assets/client-images/DVD/gallery-3.webp";
-import img4 from "../assets/client-images/DVD/gallery-4.webp";
+import img3 from "../assets/client-images/DVD/gallery-3.jpg";
+import img4 from "../assets/client-images/DVD/gallery-4.jpg";
 import img5 from "../assets/client-images/DVD/DVD.png";
+import img5he from "../assets/client-images/DVD/DVD-hebrew.png";
 import { useTranslation } from "react-i18next";
 import { useParams } from "react-router-dom";
 
@@ -142,7 +143,7 @@ const DVD = () => {
       <MainContent>
         <Cover
           lng={lng}
-          src={img5}
+          src={lng === "he" ? img5he : img5}
           alt={"Yigal Pinchas multimadia 3 - יגאל פנחס מולטימדיה"}
         />
         <TextContent>

@@ -4,11 +4,10 @@ export const bookNodes = [
     name: "הכושר ההוליסטי",
     shortDesc:
       "הכושר ההוליסטי מציג בפני הקורא גישה חדשנית וייחודית לפיתוח כושר גופני, השמה דגש על צרכיו השונים של המתאמן, לבד מאלו הפיזיים: צרכים רגשיים, רוחניים, שכליים, חברתיים ועוד. זאת לאור ההנחה כי לא די לשלוט בכל מרכיבי הכושר, בעקרונות האימון ובשיטותיו, אלא חשוב להכיר את מגוון הגורמים הפנימיים להנעה ולהתמדה בפעילות גופנית...",
-    coverSrc: require("../assets/client-images/Books/Front-Covers/holistic-fitness.webp"),
-    fullCover: require("../assets/client-images/Books/Full-Covers/Holistic-fitness.png"),
-    purchaseMethod: "contact",
-    purchaseMessage:
-    '<h3>לרכישה צרו קשר <br /> </h3> <p style="margin-top= 0rem; margin-bottom= 0.5rem; font-size=1.3rem; font-weight=400">yigalpinchas@gmail.com</p>',
+    coverSrc: require("../assets/client-images/Books/Front-Covers/holistic-fitness-new.png"),
+    fullCover: require("../assets/client-images/Books/Full-Covers/holistic-fitness-new.png"),
+    purchaseMethod: "url",
+    purchaseMessage: "https://www.amazon.com/gp/product/B0D98SDFJX?ref_=dbs_m_mng_rwt_calw_tpbk_0&storeType=ebooks&qid=1773844254&sr=8-1",
     language: "he",
     paragraphs: [
       "<h4>כושר הוליסטי® – רקע ומבוא</h4>",
@@ -30,11 +29,10 @@ export const bookNodes = [
     name: "המדריך השלם לפעילות בחדר הכושר",
     shortDesc:
       'הספר נבחר על ידי מחלקת כושר קרבי בצה"ל כספר הראוי ביותר לשימוש קציני האימון גופני בחילות צה"ל השונים. הספר נבחר ע"י מחלקת הספורט של ע.ת.א כספר הראוי ביותר לשימוש רכזי הספורט. הספר נבחר כספר שי למצטיינים בחינוך במכללת סמינר הקיבוצים ועוד.',
-    coverSrc: require("../assets/client-images/Books/Front-Covers/complete-guide.png"),
-    fullCover: require("../assets/client-images/Books/Full-Covers/complete-guide.jpg"),
-    purchaseMethod: "contact",
-    purchaseMessage:
-    '<h3>לרכישה צרו קשר <br /> </h3> <p style="margin-top= 0rem; margin-bottom= 0.5rem; font-size=1.3rem; font-weight=400">yigalpinchas@gmail.com</p>',
+    coverSrc: require("../assets/client-images/Books/Front-Covers/complete-guide-new.png"),
+    fullCover: require("../assets/client-images/Books/Full-Covers/complete-guide-new.png"),
+    purchaseMethod: "url",
+    purchaseMessage: "https://www.amazon.com/gp/product/B0D99KWXBQ?ref_=dbs_m_mng_rwt_calw_tpbk_1&storeType=ebooks&qid=1773844254&sr=8-1",
     language: "he",
     paragraphs: [
       "<h4>מהדורה 3 ומורחבת, 2019</h4>",
@@ -60,11 +58,10 @@ export const bookNodes = [
     name: "ממתיחות לגמישות - המדריך השלם",
     shortDesc:
       "הספר הנוכחי מתמקד בדרכים לשיפור הגמישות הפיזית מתוך הנחה, שזו רק שלב התחלתי למימוש כלל ההיבטים של הגמישות; שריר גמיש הוא שריר סתגלן, כשם שניתן להגדיל את היקף התנועה כך ניתן להרחיב את גבולות החשיבה והדימיון.",
-    coverSrc: require("../assets/client-images/Books/Front-Covers/stretching.webp"),
-    fullCover: require("../assets/client-images/Books/Full-Covers/stretching.jpg"),
-    purchaseMethod: "contact",
-    purchaseMessage:
-    '<h3>לרכישה צרו קשר <br /> </h3> <p style="margin-top= 0rem; margin-bottom= 0.5rem; font-size=1.3rem; font-weight=400">yigalpinchas@gmail.com</p>',
+    coverSrc: require("../assets/client-images/Books/Front-Covers/stretching-new.png"),
+    fullCover: require("../assets/client-images/Books/Full-Covers/stretching-new.png"),
+    purchaseMethod: "url",
+    purchaseMessage: "https://www.amazon.com/gp/product/B0C641Q6SC?ref_=dbs_m_mng_rwt_calw_tpbk_2&storeType=ebooks&qid=1773844254&sr=8-1",
     language: "he",
     paragraphs: [
       "<h4>פתח דבר</h4><p>מרכיב הגמישות ניתן לפיתוח בכל גיל והוא איננו מוגבל למין או לאוכלוסייה מסוימת, כל אחד יכול לשפר את מרכיב הגמישות בהיבטיו השונים:</p>",
@@ -80,11 +77,11 @@ export const bookNodes = [
     name: "Holistic Fitness Training",
     shortDesc:
       "After decades of working in physical education and teaching physical education to  thousands of trainees and students in both formal and informal systems, I realized that  achieving success requires a different approach from those currently prevalent in the  field. Throughout teaching physical activity - whether in gyms, classes, schools, high  schools, or colleges - I discovered that existing approaches do not provide an adequate  response for diverse populations.",
-    coverSrc: require("../assets/client-images/Books/Front-Covers/Holistic-fitness-en.png"),
-    fullCover: require("../assets/client-images/Books/Full-Covers/Holistic-fitness-en.png"),
+    coverSrc: require("../assets/client-images/Books/Front-Covers/holistic-fitness-en-new.png"),
+    fullCover: require("../assets/client-images/Books/Full-Covers/holistic-fitness-en-new.png"),
     purchaseMethod: "url",
     purchaseMessage:
-      "https://www.goodreads.com/book/show/216373664-holistic-fitness-training",
+      "https://www.amazon.com/gp/product/B0D98SDFJX?ref_=dbs_m_mng_rwt_calw_tpbk_0&storeType=ebooks&qid=1773844254&sr=8-1",
     language: "en",
     paragraphs: [
       "<h4>Holistic Fitness training ® - Background and Introduction</h4>",
@@ -105,11 +102,11 @@ export const bookNodes = [
     name: "Start With Stretching",
     shortDesc:
       "The current book focuses on ways to improve physical flexibility based on the  assumption that this is just an initial stage for realizing all aspects of flexibility; a flexible  muscle is an adaptable muscle, just as one can increase range of motion, so can one  expand the boundaries of thought and imagination",
-    coverSrc: require("../assets/client-images/Books/Front-Covers/start-stretching-en.png"),
-    fullCover: require("../assets/client-images/Books/Full-Covers/start-stretching-en.png"),
+    coverSrc: require("../assets/client-images/Books/Front-Covers/start-stretching-en-new.png"),
+    fullCover: require("../assets/client-images/Books/Full-Covers/start-stretching-en-new.png"),
     purchaseMethod: "url",
     purchaseMessage:
-      "https://www.goodreads.com/book/show/216388426-start-with-stretching",
+      "https://www.amazon.com/gp/product/B0C641Q6SC?ref_=dbs_m_mng_rwt_calw_tpbk_2&storeType=ebooks&qid=1773844254&sr=8-1",
     language: "en",
     paragraphs: [
       "<h4>Flexibility is key to adaptation: A theoretical and visual guide to increased flexibility  and well-being.</h4> ",
@@ -122,7 +119,7 @@ export const bookNodes = [
       "<p>Dreaming of a stronger, more flexible body? This book is the perfect guide for you! You'll  find a variety of detailed exercises and clear illustrations that will help you safely and  effectively develop your flexibility. With no need for special equipment or prior  knowledge, you can start training today and enjoy the many benefits of flexibility:  improved performance, injury prevention, stress relief, and better posture. </p>",
       "<h4>Why is this book for you? <h4>",
       "<ul><li><b>Simple and clear:</b> Detailed explanations and high-quality images to help you  understand and correctly perform the exercises. </li><li><b>Diverse: </b>A wide range of exercises to suit any level and any goal. </li><li><b>Effective:</b> Focused exercises that will help you achieve results quickly.</li> <li><b>Safe:</b> Detailed safety guidelines to ensure proper and safe training. </li></ul>",
-      '<h4 style="color: #FFD600; font-size: 1.2rem"; > Start your journey to stronger, more flexible body today!</h4>',
+      '<h4 style="color: #1a3a5c; font-size: 1.2rem"; > Start your journey to stronger, more flexible body today!</h4>',
     ],
   },
   {
@@ -130,11 +127,11 @@ export const bookNodes = [
     name: "BE YOUR OWN PERSONAL TRAINER",
     shortDesc:
       'Backed by years of experience and scientific evidence, expert fitness trainer and veteran physical educator Yigal Pinchas, Ph.D., presents the most \n comprehensive and detailed guide to training in the gym available to date. Recognized by the IDF as the leading training and instruction manual for \n soldiers, "Be Your Own Personal Trainer" has received recommendations from leading fitness organizations in the world since its initial publication.',
-    coverSrc: require("../assets/client-images/Books/Front-Covers/personal-trainer.webp"),
-    fullCover: require("../assets/client-images/Books/Full-Covers/Personal-trainer.png"),
+    coverSrc: require("../assets/client-images/Books/Front-Covers/personal-trainer-new.png"),
+    fullCover: require("../assets/client-images/Books/Full-Covers/personal-trainer-new.png"),
     purchaseMethod: "url",
     purchaseMessage:
-      "https://www.goodreads.com/book/show/160857448-be-your-own-personal-trainer",
+      "https://www.amazon.com/gp/product/B0D99KWXBQ?ref_=dbs_m_mng_rwt_calw_tpbk_1&storeType=ebooks&qid=1773844254&sr=8-1",
     language: "en",
     paragraphs: [
       "<h4>Everything you need to achieve maximum gains is in the palm of your hand</h4>",

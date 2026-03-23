@@ -66,7 +66,7 @@ const HeroText = styled.h1`
 `;
 
 const HeroSubtitle = styled.h3`
-  color: var(--highlight);
+  color: var(--dark-brown);
 
   @media only screen and (max-width: 1024px) {
     margin: 1.5rem 0rem;

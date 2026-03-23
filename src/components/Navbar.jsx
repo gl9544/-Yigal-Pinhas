@@ -6,6 +6,7 @@ import LanguageSwitcher from "./LanguageSwitcher";
 import { useLanguageContext } from "../context/LanguageContext";
 import { useTranslation } from "react-i18next";
 import i18n from "../i18n";
+import { bookNodes } from "../static/books";
 import {
   IconBook,
   IconCertificate,
@@ -34,6 +35,7 @@ const NavbarContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  direction: ltr;
   border-bottom: 2px solid #1a1a1a84;
   position: relative;
   height: 100%;
@@ -61,14 +63,14 @@ const HomeLink = styled.button`
   font-weight: bold;
   display: flex;
   background-color: transparent;
-  font-size: 1.45rem;
-  color: var(--dark-brown);
+  font-size: 1.7rem;
+  color: #1a3a5c;
   margin: 1% 0;
   transition: all 0.2s ease-in-out;
 
   &:hover {
-    color: var(--highlight);
-    filter: brightness(1);
+    color: var(--dark-brown);
+    filter: brightness(0.7);
   }
 
   @media only screen and (max-width: 992px) {
@@ -81,7 +83,7 @@ const Link = styled.div`
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  color: var(--highlight);
+  color: var(--dark-brown);
   box-shadow: inset 0 0 0 0 var(--highlight);
   transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   padding: 0 2.5vw;
@@ -110,6 +112,49 @@ const Link = styled.div`
       letter-spacing: 0px;
       padding-right: 5px;
     }
+  }
+`;
+
+const LinkWrapper = styled.div`
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100%;
+`;
+
+const BooksDropdown = styled.div`
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #1a1a1a;
+  border-radius: 0 0 12px 12px;
+  min-width: 280px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.22);
+  overflow: hidden;
+  z-index: 200;
+  animation: fadeSlide 0.18s ease;
+
+  @keyframes fadeSlide {
+    from { opacity: 0; transform: translateY(-6px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+`;
+
+const DropdownItem = styled.div`
+  padding: 1rem 1.6rem;
+  color: #fff;
+  font-size: 1.08rem;
+  font-weight: 600;
+  cursor: pointer;
+  border-bottom: 1px solid #2e2e2e;
+  direction: ${({ lng }) => (lng === "he" ? "rtl" : "ltr")};
+  box-shadow: inset 0 0 0 0 var(--highlight);
+  transition: color 0.2s ease-in-out, box-shadow 0.4s ease-in-out;
+
+  &:last-child { border-bottom: none; }
+  &:hover {
+    box-shadow: inset 400px 0 0 0 var(--highlight);
+    color: #1a1a1a;
   }
 `;
 
@@ -230,8 +275,10 @@ const Navbar = () => {
   const navigate = useNavigate();
   const { lng, id } = useParams();
   const [isOpen, setIsOpen] = useState(false);
+  const [booksOpen, setBooksOpen] = useState(false);
   const { isHebrew } = useLanguageContext();
   const { t, i18n } = useTranslation();
+  const booksForLng = bookNodes.filter(b => b.language === i18n.language && b.name !== "ספרים באנגלית" && b.id !== undefined);
 
   const handleOpen = () => {
     if (isOpen) {
@@ -288,24 +335,52 @@ const Navbar = () => {
 
       {/* Desktop Navbar */}
       <NavbarContainer>
-        <HomeLink onClick={() => navigate(`/${i18n.language}`)}>
-          {t("YigalPinchas")}
-        </HomeLink>
-        <LinksContainer>
-          {getNavLinks(i18n.language).map((link, index) => (
-            <Link
-              onClick={() => navigate(`/${i18n.language}/${link.route}`)}
-              isHebrew={isHebrew}
-              key={index}
-            >
-              {link.icon}
-              <a>{t(link.attr)}</a>
-            </Link>
-          ))}
-        </LinksContainer>
         <DeskTopLngSwitcher>
         <LanguageSwitcher />
         </DeskTopLngSwitcher>
+        <LinksContainer>
+          {getNavLinks(i18n.language).map((link, index) => (
+            link.attr === "Books" ? (
+              <LinkWrapper
+                key={index}
+                onMouseEnter={() => setBooksOpen(true)}
+                onMouseLeave={() => setBooksOpen(false)}
+              >
+                <Link
+                  onClick={() => navigate(`/${i18n.language}/${link.route}`)}
+                  isHebrew={isHebrew}
+                  style={{ height: "100%" }}
+                >
+                  {link.icon}
+                  <a>{t(link.attr)}</a>
+                </Link>
+                <BooksDropdown style={{ display: booksOpen ? "block" : "none" }}>
+                  {booksForLng.map((book) => (
+                    <DropdownItem
+                      key={book.id}
+                      lng={i18n.language}
+                      onClick={() => { navigate(`/${i18n.language}/books/${book.id}`); setBooksOpen(false); }}
+                    >
+                      {book.name}
+                    </DropdownItem>
+                  ))}
+                </BooksDropdown>
+              </LinkWrapper>
+            ) : (
+              <Link
+                onClick={() => navigate(`/${i18n.language}/${link.route}`)}
+                isHebrew={isHebrew}
+                key={index}
+              >
+                {link.icon}
+                <a>{t(link.attr)}</a>
+              </Link>
+            )
+          ))}
+        </LinksContainer>
+        <HomeLink onClick={() => navigate(`/${i18n.language}`)}>
+          {t("YigalPinchas")}
+        </HomeLink>
       </NavbarContainer>
     </NavbarSection>
   );

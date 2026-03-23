@@ -147,6 +147,15 @@ const Books = ({ heading, active, hideActive }) => {
     window.scrollTo(0, 0);
   };
 
+  const handleDoubleClick = (book) => {
+    if (book.name === "ספרים באנגלית") {
+      handleChangeLanguage();
+    } else {
+      navigate(`/${lng}/books/${book.id}`);
+      window.scrollTo(0, 0);
+    }
+  };
+
   const handleChangeLanguage = () => {
     const switchTo = lng === "he" ? "en" : "he";
     navigate(`/${switchTo}/books/3`);
@@ -166,6 +175,7 @@ const Books = ({ heading, active, hideActive }) => {
             currActive={currActive}
             setCurrActive={setCurrActive}
             hideActive={hideActive}
+            onDoubleClick={handleDoubleClick}
           />
         </BookCarouselContainer>
         <BookDescContainer

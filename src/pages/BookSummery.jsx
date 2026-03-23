@@ -55,10 +55,40 @@ const Content = styled.div`
   line-height: 1.5rem;
 `;
 
-const Purchase = styled.a`
-  font-size: 1.3rem;
-  font-weight: 400;
-  line-height: 2rem;
+const PurchaseButton = styled.a`
+  display: inline-block;
+  margin: 2rem 0;
+  padding: 1rem 2.5rem;
+  background-color: #1a1a1a;
+  color: var(--highlight);
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: background-color 0.25s ease, transform 0.2s ease;
+  &:hover {
+    background-color: #333;
+    transform: translateY(-2px);
+  }
+`;
+
+const ContactCard = styled.div`
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 2rem 0;
+  padding: 1rem 2.5rem;
+  background-color: #1a1a1a;
+  border-radius: 50px;
+  color: #fff;
+  font-size: 1.05rem;
+  font-weight: 500;
+  a {
+    color: var(--highlight);
+    font-weight: 700;
+    text-decoration: none;
+  }
 `;
 
 const FullCover = styled.img`
@@ -108,23 +138,18 @@ const BookSummery = () => {
             </ul>
           )}
 
-          {node.purchaseMethod === "url" ? (
-            <div>
-              <h3 style={{ lineHeight: "2.5rem" }}>
-                {t("PurchaseBooks")} &nbsp; <br />
-                <Purchase href={node.purchaseMessage} target="#blank">
-                  {t("ClickHere")}
-                </Purchase>
-              </h3>
-            </div>
-          ) : node.purchaseMethod === "contact" ? (
-            <div
-              style={{ lineHeight: "2.5rem" }}
-              dangerouslySetInnerHTML={{ __html: node.purchaseMessage }}
-            ></div>
-          ) : (
+          {node.language === "he" ? (
+            <ContactCard>
+              <span>לרכישת הספר צרו קשר:</span>
+              <a href="mailto:yigalpinchas@gmail.com">yigalpinchas@gmail.com</a>
+            </ContactCard>
+          ) : node.purchaseMethod === "url" ? (
+            <PurchaseButton href={node.purchaseMessage} target="_blank" rel="noopener noreferrer">
+              {t("PurchaseBooks")} →
+            </PurchaseButton>
+          ) : node.purchaseMethod === "unavailable" ? (
             <h4>{node.purchaseMessage}</h4>
-          )}
+          ) : null}
 
           {node.fullCover && (
             <FullCover

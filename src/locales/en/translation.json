@@ -10,7 +10,7 @@
   "Multimedia": "The DVD Multimedia",
   "HeroSubtitle": "Physical activity and health promotion",
   "HeroDescription": "Senior lecturer at Seminar Hakibbutzim College, physical education teacher in high schools in Tel Aviv. Visiting professor at the University of Calgary in Canada.",
-  "AboutTitle": "A Bit About Yigal",
+  "AboutTitle": "Yigal Pinchas Ph.D",
   "AboutSubtitle": "“There is no love like the love of muscle” Yigal Pinchas, Ph.D.",
   "AboutMain": "<p>Many of my friends and students asked me to write about my challenging, surprising,  and inspiring life story... </p><p>Until the age of 18 (recruitment age), I grew up for 14 years in various boarding school  settings. I learned silence from the chatterboxes, kindness from the cruel-hearted, and  patience from the impatient. To my greatest surprise, I am not grateful to these teachers  of mine. <p/><p>Nevertheless, I've come to realize that necessity is the mother of invention, that to know  how to get up you must not fear falling, and that patience is bitter but its fruit is sweet! </p><p>I chose to write and focus on the \"toolbox containing tools for life\" - these tools are the  strengths and powers in the holistic approach I developed throughout my life. This  approach first proved its effectiveness to me in promoting a healthy and active lifestyle,  and later contributed greatly to those around me. Many of his friends and students  asked me to write </p><p>This holistic approach not only benefited me and those close to me, but also profoundly  impacted the readers of my books. Many of them shared with me how the tools I  presented helped them deal with life's challenges more effectively. My readers reported  significant improvement in their ability to identify their personal strengths and use them  as leverage for growth. They learned to see obstacles as opportunities for developing  creative solutions, just as I learned that \"necessity is the mother of invention.\"</p>",
   "YigalMail": "yigalpinchas@gmail.com",
@@ -138,6 +138,10 @@
     {
       "name": "Sleep - Who Needs It Anyway",
       "url": "Sleep - Who Needs It Anyway"
+    },
+    {
+      "name": "Stretching and Flexibility – A Vital Component in Training and Life",
+      "url": "stretching-flexibility"
     }
   ]
 }

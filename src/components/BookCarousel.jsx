@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import { useRef } from "react";
 import styled from "styled-components";
 import BlobImg from "../assets/internal-images/heroBlob.svg";
 import { useParams } from "react-router-dom";
@@ -169,11 +170,33 @@ const getDisplayType = (w) => {
   }
 };
 
-const BookCarousel = ({ nodes, currActive, setCurrActive, hideActive }) => {
+const BookCarousel = ({ nodes, currActive, setCurrActive, hideActive, onDoubleClick }) => {
   const { t, i18n } = useTranslation();
   const { lng } = useParams();
+  const touchStartX = useRef(null);
 
   const winW = getDisplayType(window.innerWidth);
+
+  const handleTouchStart = (e) => {
+    touchStartX.current = e.touches[0].clientX;
+  };
+
+  const handleTouchEnd = (e) => {
+    if (touchStartX.current === null) return;
+    const diff = touchStartX.current - e.changedTouches[0].clientX;
+    if (Math.abs(diff) < 40) return;
+    const currentIdx = nodes.indexOf(currActive);
+    if (diff > 0) {
+      // swipe left → next
+      const next = nodes[currentIdx + 1];
+      if (next) setCurrActive(next);
+    } else {
+      // swipe right → prev
+      const prev = nodes[currentIdx - 1];
+      if (prev) setCurrActive(prev);
+    }
+    touchStartX.current = null;
+  };
 
   const getVisualData = (idx) => {
     const offset =
@@ -196,19 +219,23 @@ const BookCarousel = ({ nodes, currActive, setCurrActive, hideActive }) => {
   };
 
   return (
-    <BookCarouselContainer lng={lng}>
+    <BookCarouselContainer lng={lng} onTouchStart={handleTouchStart} onTouchEnd={handleTouchEnd}>
       {nodes.map((book, idx) => {
         const style = getVisualData(idx);
 
         return (
           <InnerContainer style={style} key={`book-cover-${book.id}`}>
             {book.name === "ספרים באנגלית" ? (
-              <MoreInEnglish onClick={() => setCurrActive(book)}>
+              <MoreInEnglish
+                onClick={() => setCurrActive(book)}
+                onDoubleClick={() => onDoubleClick && onDoubleClick(book)}
+              >
                 <h4>ספרים באנגלית</h4>
               </MoreInEnglish>
             ) : (
               <BookCover
                 onClick={() => setCurrActive(book)}
+                onDoubleClick={() => onDoubleClick && onDoubleClick(book)}
                 src={book.coverSrc}
                 alt={book.name}
               ></BookCover>

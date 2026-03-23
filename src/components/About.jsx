@@ -24,7 +24,7 @@ const AboutSection = styled.section`
   }
 
   h4 {
-    color: var(--highlight);
+    color: var(--dark-brown);
     text-align: center;
     margin: 0.5rem;
   }

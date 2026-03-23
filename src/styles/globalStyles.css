@@ -56,7 +56,7 @@ button:hover{
 }
 
 .trademark {
-    color: var(--highlight);
+    color: var(--dark-brown);
 }
 
 .pretty-shadow{
@@ -76,7 +76,7 @@ button:hover{
 }
 
 strong {
-    color: var(--highlight);
+    color: var(--dark-brown);
 }
 
 .rpv-core__inner-page {
