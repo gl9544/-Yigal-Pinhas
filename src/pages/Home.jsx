@@ -6,6 +6,7 @@ import styled from "styled-components";
 const VideoSection = styled.section`
   width: 100%;
   margin-top: 10vh;
+  max-height: 100vh;
   background-color: var(--dark-brown);
   display: flex;
   justify-content: center;
@@ -13,14 +14,15 @@ const VideoSection = styled.section`
   overflow: hidden;
 
   video {
-    width: 60%;
-    height: 120vh;
-    object-fit: cover;
+    width: 25%;
+    height: auto;
+    max-height: 100vh;
+    object-fit: contain;
     display: block;
 
     @media only screen and (max-width: 768px) {
       width: 85%;
-      height: 70vh;
+      max-height: 60vh;
     }
   }
 `;

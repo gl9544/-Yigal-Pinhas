@@ -138,7 +138,7 @@ const HeroGuy = styled.img`
 const HeroGirl = styled.img`
   border-radius: 15px;
   position: absolute;
-  width: 90%;
+  width: 108%;
   bottom: 10%;
   left: ${({ lng }) => (lng === "he" ? "10vw" : "unset")};
   right: ${({ lng }) => (lng === "he" ? "unset" : "10vw")};

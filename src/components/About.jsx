@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import YigalImg from "./../assets/client-images/yigal-new.jpg";
-import GroceriesSVG from "./../assets/internal-images/Bag of groceries.svg";
+import PullUpImg from "./../assets/internal-images/pull-up.png";
 import { useTranslation } from "react-i18next";
 
 const AboutSection = styled.section`
@@ -106,11 +106,14 @@ const AboutImageContainer = styled.div`
   }
 `;
 
-const Groceries = styled.img`
+
+const PullUp = styled.img`
   position: absolute;
   bottom: 0;
   right: 0;
   width: 10%;
+  mix-blend-mode: multiply;
+  opacity: 0.85;
 `;
 
 const About = ({ forwardedRef }) => {
@@ -121,8 +124,6 @@ const About = ({ forwardedRef }) => {
       <h2>{t("AboutTitle")}</h2>
       <h4>{t("AboutSubtitle")}</h4>
       <MainContainer
-        // data-aos="fade-up"
-        // data-aos-duration="1500"
         lng={i18n.language}
       >
         <img src={YigalImg} alt="Yigal Pinchas - יגאל פנחס" />
@@ -130,10 +131,8 @@ const About = ({ forwardedRef }) => {
           dangerouslySetInnerHTML={{ __html: t("AboutMain") }}
           lng={i18n.language}
         ></AboutTextContainer>
-        {/* <AboutImageContainer> */}
-        {/* </AboutImageContainer> */}
       </MainContainer>
-      <Groceries src={GroceriesSVG} alt="bag-of-groceries" />
+      <PullUp src={PullUpImg} alt="pull up" />
     </AboutSection>
   );
 };

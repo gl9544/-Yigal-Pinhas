@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "./styles/globalStyles.css";
-import { Home, BookSummery, Paper, Papers, Courses, Multimedia } from "./pages";
+import { Home, BookSummery, Paper, Papers, Courses, Multimedia, VideoPage } from "./pages";
 import {
   BrowserRouter as Router,
   Routes,
@@ -117,6 +117,14 @@ const App = () => {
             element={
               <LngHandler>
                 <Paper />
+              </LngHandler>
+            }
+          />
+          <Route
+            path="/:lng/videos/:id"
+            element={
+              <LngHandler>
+                <VideoPage />
               </LngHandler>
             }
           />

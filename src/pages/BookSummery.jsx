@@ -91,6 +91,31 @@ const ContactCard = styled.div`
   }
 `;
 
+const VideoTextRow = styled.div`
+  display: flex;
+  direction: ltr;
+  flex-direction: ${({ lng }) => (lng === "he" ? "row" : "row-reverse")};
+  gap: 3rem;
+  align-items: flex-start;
+
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+`;
+
+const BookVideo = styled.video`
+  width: 35%;
+  min-width: 260px;
+  border-radius: 12px;
+  flex-shrink: 0;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+    min-width: unset;
+  }
+`;
+
 const FullCover = styled.img`
   width: ${(props) => (props.size === 2 ? "60%" : "40%")};
   margin: auto;
@@ -126,7 +151,14 @@ const BookSummery = () => {
       <Section lng={i18n.language}>
         <Title>{node.name}</Title>
 
-        <Content>
+        <VideoTextRow lng={i18n.language}>
+          {node.videoSrc && (
+            <BookVideo key={node.id} controls>
+              <source src={node.videoSrc} type="video/mp4" />
+              <source src={node.videoSrc} type="video/quicktime" />
+            </BookVideo>
+          )}
+          <Content>
           {node.paragraphs.map((p, idx) => (
             <div key={idx} dangerouslySetInnerHTML={{ __html: p }}></div>
           ))}
@@ -138,10 +170,14 @@ const BookSummery = () => {
             </ul>
           )}
 
-          {node.language === "he" ? (
+          {node.language === "he" && node.purchaseMethod === "url" ? (
+            <PurchaseButton href={node.purchaseMessage} target="_blank" rel="noopener noreferrer">
+              ← {t("PurchaseBooks")}
+            </PurchaseButton>
+          ) : node.language === "he" ? (
             <ContactCard>
-              <span>לרכישת הספר צרו קשר:</span>
               <a href="mailto:yigalpinchas@gmail.com">yigalpinchas@gmail.com</a>
+              <span>:לרכישת הספר צרו קשר</span>
             </ContactCard>
           ) : node.purchaseMethod === "url" ? (
             <PurchaseButton href={node.purchaseMessage} target="_blank" rel="noopener noreferrer">
@@ -163,7 +199,8 @@ const BookSummery = () => {
               alt="full cover"
             />
           )}
-        </Content>
+          </Content>
+        </VideoTextRow>
       </Section>
       <Books heading={t("MoreBooks")} active={id} hideActive={true} />
     </>

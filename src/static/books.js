@@ -1,13 +1,14 @@
 export const bookNodes = [
   {
     id: 0,
-    name: "הכושר ההוליסטי",
+    name: "הכושר ההוליסטי - מתווה לאורח חיים בריא ופעיל",
     shortDesc:
       "הכושר ההוליסטי מציג בפני הקורא גישה חדשנית וייחודית לפיתוח כושר גופני, השמה דגש על צרכיו השונים של המתאמן, לבד מאלו הפיזיים: צרכים רגשיים, רוחניים, שכליים, חברתיים ועוד. זאת לאור ההנחה כי לא די לשלוט בכל מרכיבי הכושר, בעקרונות האימון ובשיטותיו, אלא חשוב להכיר את מגוון הגורמים הפנימיים להנעה ולהתמדה בפעילות גופנית...",
     coverSrc: require("../assets/client-images/Books/Front-Covers/holistic-fitness-new.png"),
     fullCover: require("../assets/client-images/Books/Full-Covers/holistic-fitness-new.png"),
+    videoSrc: "/videos/holistic-fitness.MOV",
     purchaseMethod: "url",
-    purchaseMessage: "https://www.amazon.com/gp/product/B0D98SDFJX?ref_=dbs_m_mng_rwt_calw_tpbk_0&storeType=ebooks&qid=1773844254&sr=8-1",
+    purchaseMessage: "https://bookpod.co.il/product/%d7%94%d7%9b%d7%95%d7%a9%d7%a8-%d7%94%d7%94%d7%95%d7%9c%d7%99%d7%a1%d7%98%d7%99-%d7%9e%d7%aa%d7%95%d7%95%d7%94-%d7%9c%d7%90%d7%95%d7%a8%d7%9a-%d7%97%d7%99%d7%99%d7%9d-%d7%91%d7%a8%d7%99%d7%90-%d7%95/",
     language: "he",
     paragraphs: [
       "<h4>כושר הוליסטי® – רקע ומבוא</h4>",
@@ -31,8 +32,9 @@ export const bookNodes = [
       'הספר נבחר על ידי מחלקת כושר קרבי בצה"ל כספר הראוי ביותר לשימוש קציני האימון גופני בחילות צה"ל השונים. הספר נבחר ע"י מחלקת הספורט של ע.ת.א כספר הראוי ביותר לשימוש רכזי הספורט. הספר נבחר כספר שי למצטיינים בחינוך במכללת סמינר הקיבוצים ועוד.',
     coverSrc: require("../assets/client-images/Books/Front-Covers/complete-guide-new.png"),
     fullCover: require("../assets/client-images/Books/Full-Covers/complete-guide-new.png"),
-    purchaseMethod: "url",
-    purchaseMessage: "https://www.amazon.com/gp/product/B0D99KWXBQ?ref_=dbs_m_mng_rwt_calw_tpbk_1&storeType=ebooks&qid=1773844254&sr=8-1",
+    videoSrc: "/videos/personal-trainer.MOV",
+    purchaseMethod: "contact",
+    purchaseMessage: "",
     language: "he",
     paragraphs: [
       "<h4>מהדורה 3 ומורחבת, 2019</h4>",
@@ -55,13 +57,14 @@ export const bookNodes = [
   },
   {
     id: 2,
-    name: "ממתיחות לגמישות - המדריך השלם",
+    name: "התחל בגמישות - המדריך השלם",
     shortDesc:
       "הספר הנוכחי מתמקד בדרכים לשיפור הגמישות הפיזית מתוך הנחה, שזו רק שלב התחלתי למימוש כלל ההיבטים של הגמישות; שריר גמיש הוא שריר סתגלן, כשם שניתן להגדיל את היקף התנועה כך ניתן להרחיב את גבולות החשיבה והדימיון.",
     coverSrc: require("../assets/client-images/Books/Front-Covers/stretching-new.png"),
     fullCover: require("../assets/client-images/Books/Full-Covers/stretching-new.png"),
+    videoSrc: "/videos/stretching.MOV",
     purchaseMethod: "url",
-    purchaseMessage: "https://www.amazon.com/gp/product/B0C641Q6SC?ref_=dbs_m_mng_rwt_calw_tpbk_2&storeType=ebooks&qid=1773844254&sr=8-1",
+    purchaseMessage: "https://bookpod.co.il/product/%d7%94%d7%aa%d7%97%d7%9c-%d7%91%d7%9e%d7%aa%d7%99%d7%97%d7%95%d7%aa-%d7%9e%d7%93%d7%a8%d7%99%d7%9a-%d7%a2%d7%99%d7%95%d7%a0%d7%99-%d7%95%d7%99%d7%96%d7%95%d7%90%d7%9c%d7%99-%d7%95%d7%9e%d7%a2%d7%a9/",
     language: "he",
     paragraphs: [
       "<h4>פתח דבר</h4><p>מרכיב הגמישות ניתן לפיתוח בכל גיל והוא איננו מוגבל למין או לאוכלוסייה מסוימת, כל אחד יכול לשפר את מרכיב הגמישות בהיבטיו השונים:</p>",
@@ -79,6 +82,7 @@ export const bookNodes = [
       "After decades of working in physical education and teaching physical education to  thousands of trainees and students in both formal and informal systems, I realized that  achieving success requires a different approach from those currently prevalent in the  field. Throughout teaching physical activity - whether in gyms, classes, schools, high  schools, or colleges - I discovered that existing approaches do not provide an adequate  response for diverse populations.",
     coverSrc: require("../assets/client-images/Books/Front-Covers/holistic-fitness-en-new.png"),
     fullCover: require("../assets/client-images/Books/Full-Covers/holistic-fitness-en-new.png"),
+    videoSrc: "/videos/holistic-fitness.MOV",
     purchaseMethod: "url",
     purchaseMessage:
       "https://www.amazon.com/gp/product/B0D98SDFJX?ref_=dbs_m_mng_rwt_calw_tpbk_0&storeType=ebooks&qid=1773844254&sr=8-1",
@@ -104,6 +108,7 @@ export const bookNodes = [
       "The current book focuses on ways to improve physical flexibility based on the  assumption that this is just an initial stage for realizing all aspects of flexibility; a flexible  muscle is an adaptable muscle, just as one can increase range of motion, so can one  expand the boundaries of thought and imagination",
     coverSrc: require("../assets/client-images/Books/Front-Covers/start-stretching-en-new.png"),
     fullCover: require("../assets/client-images/Books/Full-Covers/start-stretching-en-new.png"),
+    videoSrc: "/videos/stretching.MOV",
     purchaseMethod: "url",
     purchaseMessage:
       "https://www.amazon.com/gp/product/B0C641Q6SC?ref_=dbs_m_mng_rwt_calw_tpbk_2&storeType=ebooks&qid=1773844254&sr=8-1",
@@ -129,9 +134,10 @@ export const bookNodes = [
       'Backed by years of experience and scientific evidence, expert fitness trainer and veteran physical educator Yigal Pinchas, Ph.D., presents the most \n comprehensive and detailed guide to training in the gym available to date. Recognized by the IDF as the leading training and instruction manual for \n soldiers, "Be Your Own Personal Trainer" has received recommendations from leading fitness organizations in the world since its initial publication.',
     coverSrc: require("../assets/client-images/Books/Front-Covers/personal-trainer-new.png"),
     fullCover: require("../assets/client-images/Books/Full-Covers/personal-trainer-new.png"),
+    videoSrc: "/videos/personal-trainer.MOV",
     purchaseMethod: "url",
     purchaseMessage:
-      "https://www.amazon.com/gp/product/B0D99KWXBQ?ref_=dbs_m_mng_rwt_calw_tpbk_1&storeType=ebooks&qid=1773844254&sr=8-1",
+      "https://www.amazon.com/Your-Own-Personal-Trainer-Science-Based/dp/B0C641Q6SC",
     language: "en",
     paragraphs: [
       "<h4>Everything you need to achieve maximum gains is in the palm of your hand</h4>",

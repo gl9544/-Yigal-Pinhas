@@ -7,7 +7,7 @@ import img4 from "../assets/client-images/DVD/gallery-4.jpg";
 import img5 from "../assets/client-images/DVD/DVD.png";
 import img5he from "../assets/client-images/DVD/DVD-hebrew.png";
 import { useTranslation } from "react-i18next";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 
 const Section = styled.section`
   background-color: var(--light-cream);
@@ -133,8 +133,12 @@ const data = [
 const DVD = () => {
   const { t } = useTranslation();
   const { lng } = useParams();
+  const navigate = useNavigate();
   const dvdData = t("MultimediaInfo", { returnObjects: true });
   const dvdDataArray = Object.entries(dvdData).map(([key, value]) => value);
+
+  // he: 0-3, en: 4-7  (img1=shoulder, img2=exercise14, img3=agonist, img4=synovial)
+  const videoIds = lng === "he" ? [0, 1, 2, 3] : [4, 5, 6, 7];
 
   return (
     <Section>
@@ -163,18 +167,26 @@ const DVD = () => {
         <GalleryItem
           src={img1}
           alt={"Yigal Pinchas multimadia 3 - יגאל פנחס מולטימדיה"}
+          style={{ cursor: "pointer" }}
+          onClick={() => navigate(`/${lng}/videos/${videoIds[0]}`)}
         />
         <GalleryItem
           src={img2}
           alt={"Yigal Pinchas multimadia 2 - יגאל פנחס מולטימדיה"}
+          style={{ cursor: "pointer" }}
+          onClick={() => navigate(`/${lng}/videos/${videoIds[1]}`)}
         />
         <GalleryItem
           src={img3}
           alt={"Yigal Pinchas multimadia 1 - יגאל פנחס מולטימדיה"}
+          style={{ cursor: "pointer" }}
+          onClick={() => navigate(`/${lng}/videos/${videoIds[2]}`)}
         />
         <GalleryItem
           src={img4}
           alt={"Yigal Pinchas multimadia 4 - יגאל פנחס מולטימדיה"}
+          style={{ cursor: "pointer" }}
+          onClick={() => navigate(`/${lng}/videos/${videoIds[3]}`)}
         />
         <Credit>
           Multimedia Guide to Working Out in the Gym. Pinchas, Y & Katz, L.

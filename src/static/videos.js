@@ -1,0 +1,58 @@
+export const videoNodes = [
+  {
+    id: 0,
+    language: "he",
+    title: "כתף - בליטה ונסיגה של העצם",
+    description: "הדגמה אנטומית של תנועות הבליטה והנסיגה של עצמות הכתף.",
+    src: require("../assets/client-images/Videos/shoulder-compressed.mp4"),
+  },
+  {
+    id: 1,
+    language: "he",
+    title: "תרגיל 14.10 - מכונת סמית' שכיבה ברכיים כפופות",
+    description: "הדגמת תרגיל 14.10 - שכיבה עם ברכיים כפופות על ספסל שטוח במכונת סמית'.",
+    src: require("../assets/client-images/Videos/exercise-14-compressed.mp4"),
+  },
+  {
+    id: 2,
+    language: "he",
+    title: "שרירים אגוניסטים",
+    description: "הסבר על שרירים אגוניסטים ותפקידם בתנועה.",
+    src: require("../assets/client-images/Videos/agonist-compressed.mp4"),
+  },
+  {
+    id: 3,
+    language: "he",
+    title: "מפרק סינוביאלי",
+    description: "הסבר על המפרק הסינוביאלי ומבנהו.",
+    src: require("../assets/client-images/Videos/synovial-joint-compressed.mp4"),
+  },
+  {
+    id: 4,
+    language: "en",
+    title: "Shoulder - Bone Protraction & Retraction",
+    description: "Anatomical demonstration of shoulder bone protraction and retraction movements.",
+    src: require("../assets/client-images/Videos/shoulder-compressed.mp4"),
+  },
+  {
+    id: 5,
+    language: "en",
+    title: "Exercise 14.10 - Supine Bent-Knee Flat Bench Smith Machine",
+    description: "Demonstration of Exercise 14.10 - supine bent-knee position on a flat bench Smith machine.",
+    src: require("../assets/client-images/Videos/exercise-14-compressed.mp4"),
+  },
+  {
+    id: 6,
+    language: "en",
+    title: "Agonist Muscles",
+    description: "Explanation of agonist muscles and their role in movement.",
+    src: require("../assets/client-images/Videos/agonist-compressed.mp4"),
+  },
+  {
+    id: 7,
+    language: "en",
+    title: "Synovial Joint",
+    description: "Explanation of the synovial joint and its structure.",
+    src: require("../assets/client-images/Videos/synovial-joint-compressed.mp4"),
+  },
+];
